@@ -1,7 +1,7 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+This is a blog of [AsperforMias](https://github.com/asperformias).
 
-::github{repo="saicaca/fuwari"}
+::github{repo="asperformias/collapsed-world"}
 
 > ### Sources of images used in this site
 > - [Unsplash](https://unsplash.com/)
