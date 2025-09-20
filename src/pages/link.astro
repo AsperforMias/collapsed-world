@@ -2,19 +2,18 @@
 import LinkList from "@components/LinkList.svelte";
 import Markdown from "@components/misc/Markdown.astro";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
-import { Content } from "../markdown/link.md";
+import { Content } from "../content/spec/link.md";
 
 const yaml = `
 - name: Mias' Blog
   url: https://mias.moe
-  avatar: /src/assets/images/avatar.jpg
+  avatar: /image/avatar.jpg
   description: The inescapable lot of solitude.
 `;
 ---
 
 <MainGridLayout title="链接" description="友情链接">
-    <div
-        class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full">
             <Markdown class="mt-2">
                 <h1>友情链接</h1>
