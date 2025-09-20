@@ -48,6 +48,11 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
+			name: "链接",
+			url: "/link/",
+			external: false,
+		},
+		{
 			name: "GitHub",
 			url: "https://github.com/asperformias", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
