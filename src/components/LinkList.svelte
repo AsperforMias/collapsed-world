@@ -55,10 +55,16 @@
     (e.target as HTMLImageElement).src = '/image/avatar.jpg';
   }
 </script>
+<style>
+  #link-card:hover {
+    background-color: var(--btn-plain-bg-hover);
+    transition-duration: 0.25s;
+  }
+</style>
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
 
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
   {#each links as item}
-    <a 
+    <a id="link-card"
       href={item.link}
       class="flehover)] active:bg-[var(--btn-plain-bg-active)] p-4 hover:pl-6 transition-all"
     >
