@@ -47,7 +47,20 @@
         link: "https://yurzhang.com/",
         avatar: "https://avatars.githubusercontent.com/u/53526247?v=4",
         descr: "什么都会的yur,use arch)",
-    }
+    },
+    {
+        name: "KUN",
+        link: "https://soft.moe/",
+        avatar: "https://avatars.githubusercontent.com/u/89312077?v=4",
+        descr: "故事的起点",
+    },
+    {
+        name: "Haruki Nikaidou",
+        link: "https://blog.plr.moe",
+        avatar: "https://avatars.githubusercontent.com/u/135048882?v=4",
+        descr: "话糙理不糙",
+    },
+
 
   ]
 
