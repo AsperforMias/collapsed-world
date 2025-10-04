@@ -1,7 +1,7 @@
 ---
 title: 一个普通人的前端学习日记
 published: 2025-09-26
-description: '我憧憬那闪烁永夜的天光'
+description: '我为仰望炽阳之蚍蜉，憧憬那闪烁永夜的天光'
 image: './universe.jpg'
 tags: [学习记录, Frontend]
 category: '日记-前端'
