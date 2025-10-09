@@ -26,3 +26,10 @@ W3S tutorial, `HTML`
 
 Chapter : `Forms` Section : `HTML Input Attributes`
 
+### 2025-10-9-9:00
+
+W3S tutorial, `HTML`
+
+Finish `Forms` chapter learning
+
+Now, Chapter : `Media` 
