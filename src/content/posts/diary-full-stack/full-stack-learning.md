@@ -1,10 +1,10 @@
 ---
-title: 一个普通人的前端学习日记
+title: 一个普通人的全栈学习日记
 published: 2025-09-26
 description: '我为仰望炽阳之蚍蜉，憧憬那闪烁永夜的天光'
 image: './universe.jpg'
-tags: [学习记录, Frontend]
-category: '日记-前端'
+tags: [学习记录, 前端, Web]
+category: '日记-全栈'
 draft: false 
 lang: ''
 ---
@@ -20,11 +20,36 @@ lang: ''
 
 ## 预期roadmap
 
+大致预期路线：
+
+### 语言/框架
+
+`HTML` -> `CSS` -> `Tailwind css` -> `JS/TS` -> `Vue/React`
+
+（TS在vue期间补充）
+
+```
+Branch: Vue   -> scss
+        React -> css-in-js, css modules
+```
+
+### 工具链
+
+Build tool: `Vite` `Webpack`, serving to bundle and optimize web applications.
+
+Bundler: `ESBuild`
+
+Deploy: `Vercel`, `Netlify`
+
+Linter: `ESlint`, `SonarQuote`
+
+## ~~流水账~~
+
 ### 2025-10-9-0:20
 
 W3S tutorial, `HTML`
 
-Chapter : `Forms` Section : `HTML Input Attributes`
+Now, Chapter : `Forms` Section : `HTML Input Attributes`
 
 ### 2025-10-9-9:00
 
@@ -33,3 +58,6 @@ W3S tutorial, `HTML`
 Finish `Forms` chapter learning
 
 Now, Chapter : `Media` 
+
+
+
