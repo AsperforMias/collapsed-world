@@ -22,7 +22,7 @@ lang: ''
 
 ### 2025-10-9-0:20
 
-W3S tutorial, ```HTML```
+W3S tutorial, `HTML`
 
-Chapter : ```Forms``` Section : ```HTML Input Attributes```
+Chapter : `Forms` Section : `HTML Input Attributes`
 
