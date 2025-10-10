@@ -36,18 +36,30 @@ However，**DONT USE Arch IF U ARE A COMPLETE NEWCOMER**
 
 ## 预期roadmap
 
+:::tips
+我个人建议您使用`OSX(MacOS)`或任意发行版的`gnu/linux`去尝试参照我的路线，因为这可以帮助您触及很多本质上的东西。正如我上文所述，windows会遮掩本质，以及windows其实在很多地方很麻烦。
+:::
+
 大致预期路线：
 
 ### 语言/框架
 
-`HTML` -> `CSS` -> `Tailwind css` -> `JS/TS` -> `Vue/React`
+前端部分：
 
-（TS在vue期间补充）
+`HTML` -> `CSS` -> `Tailwind css` 写静态web -> `JS` -> 写手搓web -> `npm`(大致了解包管理即可) -> `Vue` -> `TS` -> 写现代webapp -> `Nuxt` -> React 
 
 ```
 Branch: Vue   -> scss
         React -> css-in-js, css modules
 ```
+
+后端部分：
+
+`Nodejs` -> 写CLI app -> `PostgreSQL` -> 写简单的CRUD app -> `RESTful API` -> `JWT Auth` -> `Redis` -> 写一个完整的app
+
+DevOps部分；
+
+未完待续......
 
 ### 工具链
 
@@ -103,3 +115,7 @@ Finish `HTML` part learning
 - CSS Grid 高级特性（自动布局区域命名）→ 学基础网格即可
 - CSS 高级动画（关键帧复杂动画）→ React/Tailwind 常用库替代
 
+### 2025-10-10 23:30
+
+- [x] 字体与文本：`font-size`, `line-height`, `font-family`, `text-align`
+- [x] 盒模型：`margin`, `padding`, `border`, `width/height`, `box-sizing`
