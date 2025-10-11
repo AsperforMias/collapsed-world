@@ -133,3 +133,15 @@ Finish `HTML` part learning
 
 - [x] 字体与文本：`font-size`, `line-height`, `font-family`, `text-align`
 - [x] 盒模型：`margin`, `padding`, `border`, `width/height`, `box-sizing`
+
+### 2025-10-11-8:30
+
+看文档/视频是在获取知识，亲手写code是在训练技能。
+
+:::important
+切记，减少陷入"知识幻觉"的情况！
+Coding是一种技能，而不是纯粹的知识。如果您采取了先看完很长篇部分的文档(期间不动手)，然后再尝试写example，这时您的脑子往往会一片空白，反应不过来该怎么做。We are engineers , not scientists.
+您应该在学到每个(几个)可以独立起效的概念时，尝试动手去进行 复现->改造->观察 这样的重复过程。这就是我的best practice。
+:::
+
+这也是我一次次强调，避免在newcomer时用agent写东西的缘故之一，vibe写出的不是您自己的。
