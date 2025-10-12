@@ -53,20 +53,20 @@ Hey,bro,我想其中还有不少使用来自东方的二次元纸片小人，其
 
    `export https_proxy="$http_proxy"`
    
+3. 进入`archlive`， `pacman -Sy archinstall`更新
 
-:::tips
+4. `archinstall`，然后把它要求您必填的字段全处理好，包括分区，时区，镜像下载来源，nvidia driver，root/user账密等等
+
+5. 进入kde后，再次配置临时代理，安装字体，fx5输入法，`fish shell`，您喜欢的代理cli/gui
+
+:::tip
 这里有个小坑，一些游戏本会在新live环境自动启动飞行模式以禁用网卡，造成您在iwconfig时看不到网卡存在，您只需要用键盘的Fn key关闭飞行模式即可
 强烈建议您用rj45网线链接路由器lan口，然后用手机clash系代理app进行LAN Proxy，以最大化减少不必要的麻烦
 :::
 
-1. 进入`archlive`， `pacman -Sy archinstall`更新
-2. `archinstall`，然后把它要求您必填的字段全处理好，包括分区，时区，镜像下载来源，nvidia driver，root/user账密等等
-
 :::warning
 请务必选择nvidia的闭源专有驱动，以及在这之后禁用自带的nouveau开源驱动（让你看个亮的）
 :::
-
-5. 进入kde后，再次配置临时代理，安装字体，fx5输入法，`fish shell`，您喜欢的代理cli/gui
 
 至此主体安装以及结束了，但剩下的细枝末节实在是难以数尽，包括但不限于: 
 
