@@ -55,12 +55,12 @@ Hey,bro,我想其中还有不少使用来自东方的二次元纸片小人，其
    
 
 :::tips
-1.这里有个小坑，一些游戏本会在新live环境自动启动飞行模式以禁用网卡，造成您在iwconfig时看不到网卡存在，您只需要用键盘的Fn key关闭飞行模式即可
-2.强烈建议您用rj45网线链接路由器lan口，然后用手机clash系代理app进行LAN Proxy，以最大化减少不必要的麻烦
+这里有个小坑，一些游戏本会在新live环境自动启动飞行模式以禁用网卡，造成您在iwconfig时看不到网卡存在，您只需要用键盘的Fn key关闭飞行模式即可
+强烈建议您用rj45网线链接路由器lan口，然后用手机clash系代理app进行LAN Proxy，以最大化减少不必要的麻烦
 :::
 
-3. 进入`archlive`， `pacman -Sy archinstall`更新
-4. `archinstall`，然后把它要求您必填的字段全处理好，包括分区，时区，镜像下载来源，nvidia driver，root/user账密等等
+1. 进入`archlive`， `pacman -Sy archinstall`更新
+2. `archinstall`，然后把它要求您必填的字段全处理好，包括分区，时区，镜像下载来源，nvidia driver，root/user账密等等
 
 :::warning
 请务必选择nvidia的闭源专有驱动，以及在这之后禁用自带的nouveau开源驱动（让你看个亮的）
