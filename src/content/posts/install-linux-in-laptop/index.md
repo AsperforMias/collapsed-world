@@ -51,9 +51,11 @@ Hey,bro,我想其中还有不少使用来自东方的二次元纸片小人，其
 
 2. 联网和配置临时代理:
 
-   `export http_proxy="http://proxy-host-address:proxy-lan-port"`
-
-   `export https_proxy="$http_proxy"`
+   ```sh
+   export http_proxy="http://proxy-host-address:proxy-lan-port"
+   
+   export https_proxy="$http_proxy"
+   ```
    
 3. 进入`archlive`， `pacman -Sy archinstall`更新
 
@@ -116,7 +118,7 @@ sudo reboot
 
 然后红温了，直接照搬Glavo~~猫猫大人~~的配置，成为究极懒狗。1. `Kubuntu 24LTS` 2. `sudo ubuntu-drivers install` 3. Install `fish shell`, 啥都不改，`WM`也是24LTS的`X11`，`DE`也是default `KDE 5.x`。
 
-然后过上了幸福的日子，解决了我近乎一切烦恼（ 
+然后过上了幸福的日子，解决了我近乎一切烦恼，除了💩的**<u>MediaTek Wi-Fi 6E MT7922 (*RZ616*)</u>**，它在linux下的速率和信号接收仍然是依托答辩，不负它在社区的显赫骂名（ 
 
 后续：我又重装了两三次确认，在24LTS下无论装那种devices optional下的Nvidia drivers，都没有出现任何问题。
 
