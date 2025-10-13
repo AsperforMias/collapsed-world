@@ -169,4 +169,5 @@ Coding是一种技能，而不是纯粹的知识。如果您采取了先看完�
 
 ### 2025-10-13 13:00
 
-第一次给大大repo提pr，被merged了，虽然没什么难度，但很开心。很感谢湊老师ww
+第一次给大大的repo [Dify](https://github.com/langgenius/dify/pull/26745)提 PR，被merged了，虽然没什么难度，但很开心。很感谢湊老师ww
+
