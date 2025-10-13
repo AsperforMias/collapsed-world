@@ -1,7 +1,7 @@
 ---
 title: 一条 SE 自学之路
 published: 2025-10-13
-description: '平庸的丑小鸭妄图成为华丽的天鹅'
+description: '平庸的者的咏叹调'
 image: './asuna.jepg'
 tags: [SE, 全栈]
 category: 'SE'
