@@ -9,7 +9,7 @@
       name: "Asuka Minato",
       link: "https://asukaminato.notion.site/",
       avatar: "https://avatars.githubusercontent.com/u/30024051?v=4",
-      descr: "湊老师,是很重要的启蒙恩师",
+      descr: "湊老师,是最重要的恩师",
     },
     {
       name: "non_hana",
