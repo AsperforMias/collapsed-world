@@ -62,15 +62,15 @@
     {
       name: "PurplePlanen",
       link: "https://Purpleplanen.top",
-      avatar: "https://avatars.githubusercontent.com/u/151366823?v=4"",
+      avatar: "https://avatars.githubusercontent.com/u/151366823?v=4",
       descr: "帕秋莉,前端的学长w",
     },
     {
-    name: "Moliyue",
-    link: "https://moliyue.github.io/",
-    avatar: "https://avatars.githubusercontent.com/u/45062702?v=4",
-    descr: "网工很厉害的moliyue",
-    }
+      name: "Moliyue",
+      link: "https://moliyue.github.io/",
+      avatar: "https://avatars.githubusercontent.com/u/45062702?v=4",
+      descr: "网工很厉害的moliyue",
+    },
   ];
 
   function handleError(e: Event) {
