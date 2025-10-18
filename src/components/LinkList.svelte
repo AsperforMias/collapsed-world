@@ -51,7 +51,7 @@
       name: "KUN",
       link: "https://soft.moe/",
       avatar: "https://avatars.githubusercontent.com/u/89312077?v=4",
-      descr: "故事的起点",
+      descr: "一些往事的起点",
     },
     {
       name: "Haruki Nikaidou",
@@ -59,6 +59,18 @@
       avatar: "https://avatars.githubusercontent.com/u/135048882?v=4",
       descr: "话糙理不糙的春希",
     },
+    {
+      name: "PurplePlanen",
+      link: "https://Purpleplanen.top",
+      avatar: "https://avatars.githubusercontent.com/u/151366823?v=4"",
+      descr: "帕秋莉,前端的学长w",
+    },
+    {
+    name: "Moliyue",
+    link: "https://moliyue.github.io/",
+    avatar: "https://avatars.githubusercontent.com/u/45062702?v=4",
+    descr: "网工很厉害的moliyue",
+    }
   ];
 
   function handleError(e: Event) {
