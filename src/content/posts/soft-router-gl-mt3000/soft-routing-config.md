@@ -59,7 +59,9 @@ ls -la
 cat distfeeds.conf
 ```
 
-然后如果您发现ssh出现问题，那大概率是"host indentification has changed"，清理下残留host记录就好
+------
+
+如果您发现ssh出现问题，那大概率是"host indentification has changed"，清理下残留host记录就好
 
 ```sh
 rm -f "$HOME/.ssh/known_hosts"
@@ -71,7 +73,25 @@ rm -f "$HOME/.ssh/known_hosts"
 chmod 600 ~/.ssh/config
 ```
 
-然后可以清楚的看到这个路由器出厂内置的就是openwrt的一个snapshot, 这点毫无疑问，其区别只是引入了厂商特调的ui和 opkg 源等部分。既然内核完善，具备openwrt luci，是linux且可被ssh，那事情将会变得非常简单
+给不太清楚这个config是做什么的萌新普及下，你可以理解成这是个openssh的配置文件，它是描述性的，而且日常用的话其实配起来很简单，可以省去每次输入完整ipv4以及ssh protocol断链的烦恼，以下为示例：
+
+```
+Host *
+    AddKeysToAgent yes       # 自动将密钥添加到 ssh-agent
+    UseKeychain yes          # macOS 使用 Keychain 管理密码,其他os用户可忽略
+    IdentityFile ~/.ssh/id_rsa  # 默认私钥存储文件
+    ServerAliveInterval 60   # 每60s尝试一次相应，避免断链
+    ServerAliveCountMax 5    # 服务器无响应时，5*60=300s后断链
+
+Host gl-mt3000
+    HostName 192.168.8.1     # ipv4
+    User root								 # login user
+    Port 22                  # ssh开放端口
+```
+
+------
+
+`cat`查看信息后，可以清楚的看到这个路由器出厂内置的就是openwrt的一个snapshot, 这点毫无疑问，其区别只是引入了厂商特调的ui和 opkg 源等部分。既然内核完善，具备openwrt luci，是linux且可被ssh，那事情将会变得非常简单
 
 首先摆在您面前的有三个选项 ：
 
