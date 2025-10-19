@@ -93,6 +93,14 @@ chmod 600 ~/.ssh/config
 
 接下来就不算什么特别重要的事情了，只是一些诸如`openclash`，镜像源配置，一些小坑的注意点等细枝末节，根据个人需求完善即可，本文只介绍我的 personal practice，不然一篇post写着实在太费力了（
 
-未完待续...
+题外话：在 2025-10-18 更新本文上传图片时碰上了怪事，vercel部署的webapp url正常，被cf dns解析至vercel部署所在的域名则第一张图片加载失败。怪。
 
+`openclash`的配置其实很简单，只是有几个可能需要留意的小坑。
+
+1. 在github下载ipk，并通过`scp`上传至openwrt/iStore中的`/tmp`缓存区（把它当linux server轻量服务器就好
+2. ssh，补齐作者readme中所写的依赖项，`opkg`直装
+3. 补齐openclash所需要的内核部分，clash、meta、verge，自选。这里有个要注意的地方就是关于内核安装，项目本身提供了三个镜像源和github url，但这四个有时都会因为网络问题要么不行要么curl下一半断掉。这时您可以多试几次~~大力出奇迹~~，或者干脆去github源址下完内核，然后同理scp上传，并安装至openclash内
+4. 余下就是subscribe file，自动生成代理组/策略组config，然后享受您的软路由了
+
+btw，arm平台的软路由确实存在转发能力瓶颈的问题。能用，但有时反应有点慢（tcp握手过程
 
