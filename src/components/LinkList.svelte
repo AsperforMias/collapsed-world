@@ -71,6 +71,12 @@
       avatar: "https://avatars.githubusercontent.com/u/45062702?v=4",
       descr: "网工很厉害的moliyue",
     },
+    {
+      name: "Rocket",
+      link: "https://rocketma.dev/",
+      avatar: "https://avatars.githubusercontent.com/u/48864431?v=4",
+      descr: "网安很厉害的Rocket学长！",
+    },
   ];
 
   function handleError(e: Event) {
