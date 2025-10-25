@@ -124,3 +124,36 @@ Host gl-mt3000
 
 btw，arm平台的软路由确实存在转发能力瓶颈的问题。能用，但有时反应有点慢（tcp握手过程
 
+### 2025-10-25 17:15
+
+补充碰上的小问题：
+
+> [/tmp/clash_latest_version] Download failed: [curl xxxxx]
+
+具体表现为日志里不断滚出此报错，且无法正常测速代理文件内的各个节点
+
+判断为疑似dns问题
+
+解决方法：
+
+```sh
+ssh
+vim /etc/resolv.conf
+```
+
+然后发现其中包含字段如下
+
+```
+search lan
+namerserver 127.0.0.1
+nameserver ::1
+```
+
+这玩意一看就不太对劲。。。尝试改为阿里的dns
+
+```
+search lan
+nameserver 223.5.5.5
+```
+
+问题解决。
