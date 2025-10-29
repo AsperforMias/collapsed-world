@@ -2,7 +2,7 @@
 
 title: 课题组AiCE使用记录
 
-published: 2025-10-26
+published: 2025-10-27
 
 description: '好难'
 
