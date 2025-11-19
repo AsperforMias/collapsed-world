@@ -363,3 +363,11 @@ git graph一下子空了好几周，有点难受
 每天不刷下git graph总感觉缺了点什么（）不过这几天学校琐碎事务太多，都没啥空好好耐下心来完整的看doc,唉。。。
 
 感觉越来越缺“时间”了
+
+### 2025-11-19 21:41
+
+complete `CSS at-rules` in mdn
+
+follow hdu-wiki frontend fast-completion tutorial
+
+coding by hand is more important then reading, maybe i need try self-test project of roadmap.sh
