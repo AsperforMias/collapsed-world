@@ -1,6 +1,6 @@
 ---
 title: 2025年末总结-回忆录篇
-published: 2026-1-8
+published: 2026-01-08
 description: '终有一日，愿遂彼空'
 image: './scenery2.png'
 tags: [年末总结]
