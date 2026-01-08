@@ -399,7 +399,7 @@ Round 3 数据：WT + 40 个（Round 1-2）+ 20 个（Round 3）= 61 个数据�
 
 **Excel 格式：**
 
-```excel
+```
 data/exp/rounds/your_protein_Round2.xlsx
 
 variant  | activity
