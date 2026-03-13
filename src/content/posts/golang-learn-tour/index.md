@@ -11,7 +11,7 @@ lang: ""
 
 ## 背景
 
-为什么不做前端了？well...这个问题涉及的个人原因有些多，纯技术角度解释也很复杂，可以参考[杭电某 wiki](https://hdu-cs.wiki/s/751b2a65)，特指其中某句话：
+为什么不做前端了？well...这个问题涉及的个人原因有些多，纯技术角度解释也很复杂，可以参考[杭电某 wiki](https://hdu-cs.wiki/s/751b2a65)，特指其中评价后端的某句话：
 
 > 这些概念在不同的语言和框架之间是通用的。而核心的业务逻辑甚至基本可以脱离特定的 Web 框架而存在。你会学习到通用的 “道”，而不是仅仅某一个工具的 “术”。
 
@@ -157,3 +157,13 @@ module
 the pack/dirc is a kind of "namespace".
 
 蚌，发现自己 en 讲比 cn 貌似还顺畅些。
+
+:::tip
+Go Tour and the other similar, many exercises of them are CS-style learning, not production backend.
+
+Don't get stuck thinking:
+
+"If I can't solve this, I can't be a backend dev."
+
+That is false.
+:::
