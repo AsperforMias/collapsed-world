@@ -6,14 +6,17 @@
             <rect width="100%" height="100%" fill="white" />
             <!-- ① 主杆切割：统一回归 48 宽度，确保全图的截面间隙完全对齐 -->
             <path d="M 384 64 L 144 464" fill="none" stroke="black" stroke-width="48" stroke-linecap="round" />
-            <!-- ② 新增：叠加使用前带切痕，消除重叠溢出角。同步微调切割遮罩。 -->
-            <path d="M 44 264 C 44 198, 144 218, 264 264 C 384 310, 484 330, 484 264" fill="none" stroke="black" stroke-width="32" stroke-linecap="round" />
+            <!-- ② 新增：叠加使用前带切痕，消除重叠溢出角。保持空隙距离一致（线条粗细24，左右各留8的空隙，所以设为40）。 -->
+            <path d="M 44 264 C 44 164, 144 164, 264 264 C 384 364, 484 364, 484 264" fill="none" stroke="black" stroke-width="40" stroke-linecap="round" />
         </mask>
 
         <!-- 遮罩2：让底层的莫比乌斯后带在穿过中心时被挡住沉入地下 -->
         <mask id="mask-m-back">
             <rect width="100%" height="100%" fill="white" />
+            <!-- 沙漏双线切割（线条粗细32，留8的空隙 = 48） -->
             <path d="M 144 64 L 384 464 M 384 64 L 144 464" fill="none" stroke="black" stroke-width="48" stroke-linecap="round" />
+            <!-- 前带切割，消除中心重叠情况以产生空隙（粗细24，留8的空隙 = 40） -->
+            <path d="M 44 264 C 44 164, 144 164, 264 264 C 384 364, 484 364, 484 264" fill="none" stroke="black" stroke-width="40" stroke-linecap="round" />
         </mask>
         
         <!-- 遮罩3：让【莫比乌斯环前带】被沙漏主杆切割 -->
@@ -24,10 +27,10 @@
         </mask>
     </defs>
 
-    <!-- 1. [最底层] 莫比乌斯环 后带，断开掩埋。 (在保持圆润的前提下再压扁一点) -->
-    <path fill="none" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round" 
+    <!-- 1. [最底层] 莫比乌斯环 后带，断开掩埋。 (经过优化控制点，消除上下被削平的生硬感，线条更饱满圆润) -->
+    <path fill="none" stroke="#1a1a1a" stroke-width="24" stroke-linecap="round" 
           mask="url(#mask-m-back)"
-          d="M 44 264 C 44 330, 144 310, 264 264 C 384 218, 484 198, 484 264" />
+          d="M 44 264 C 44 364, 144 364, 264 264 C 384 164, 484 164, 484 264" />
 
     <!-- 2. [此层] 沙漏 左上↔右下 斜线，中心断开（同时避让了主杆和莫比乌斯环的重叠角）。 -->
     <path fill="none" stroke="#1a1a1a" stroke-width="32" stroke-linecap="round"
@@ -37,10 +40,10 @@
     <!-- 3. 时间：沙漏横向封顶底座 -->
     <path d="M 144 64 L 384 64 M 144 464 L 384 464" fill="none" stroke="#1a1a1a" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
 
-    <!-- 4. [高层] 莫比乌斯环 前带，被位于顶层的主杆斩断。 (在保持圆润的前提下再压扁一点) -->
-    <path fill="none" stroke="#1a1a1a" stroke-width="16" stroke-linecap="round" 
+    <!-- 4. [高层] 莫比乌斯环 前带，被位于顶层的主杆斩断。 (经过优化控制点，消除上下被削平的生硬感) -->
+    <path fill="none" stroke="#1a1a1a" stroke-width="24" stroke-linecap="round" 
           mask="url(#mask-m-front)"
-          d="M 44 264 C 44 198, 144 218, 264 264 C 384 310, 484 330, 484 264" />
+          d="M 44 264 C 44 164, 144 164, 264 264 C 384 364, 484 364, 484 264" />
 
     <!-- 5. [最顶层] 沙漏 右上↔左下 主杆，完好无损，处于绝对顶部。 -->
     <path d="M 384 64 L 144 464" fill="none" stroke="#1a1a1a" stroke-width="32" stroke-linecap="round" />
