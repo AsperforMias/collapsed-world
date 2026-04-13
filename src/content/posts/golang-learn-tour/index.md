@@ -25,9 +25,13 @@ web 后端需求+朋友项目+杭州找饭吃+语言生态对我需求便利
 
 完
 
-看什么：go.dev + pkg.go.dev + 适当 llm + Google
+看什么：
 
-为什么不是各种 blog/教程/视频？
+1. [go.dev 选看](https://go.dev/doc/tutorial/) + [module ref](pkg.go.dev) (ref) + 适当 llm + Google
+
+2. [八股 1](https://xiaolincoding.com/) + [八股 2](https://golangguide.top/) + [CN 校准参考](https://goclub.space/docs/companion) + [CN-basic-synatx](https://gopl-zh.github.io/index.html) +
+
+为什么 P1 不是直接给固定的各种 老 blog/教程/视频？
 
 太老/太旧/八股 or 面试题为主/缺乏引导/中文过量/卖课过量/中文圈 go 匮乏/go 特殊性，原因很多
 
@@ -37,18 +41,22 @@ web 后端需求+朋友项目+杭州找饭吃+语言生态对我需求便利
 
 ## 大纲
 
-- Go
-- Docker
-- Kubernetes
-- PostgreSQL
-- Redis
-- Kafka
+- `Go`(basic syntax)
+- `MySQL`/`PostgreSQL`
+- `Gin`
+- `Redis`
+- `RabbitMQ`/`Kafka`
+- `Docker`
+- `K3s`/`K8s`
 - gRPC
 - Prometheus
 - Grafana
 - OpenTelemetry
-- Gin
 - GORM
+
+接下来部分跳着看，自取所需即可。想找工作就 web 框架+mysql+中间件+八股+面经+容器化，有远大追求另谈。
+
+我层次比较低，以效率目的为先，填补构建在后。以及要找饭吃（）
 
 ## 阶段 A — 语言基础（语法、模块、并发）
 
