@@ -46,7 +46,7 @@ web 后端需求+朋友项目+杭州找饭吃+语言生态对我需求便利
 - `Gin`
 - `Redis`
 - `RabbitMQ`/`Kafka`
-- `Docker`
+- `Docker compose`
 - `K3s`/`K8s`
 - gRPC
 - Prometheus
