@@ -77,6 +77,12 @@
       avatar: "https://avatars.githubusercontent.com/u/48864431?v=4",
       descr: "网安很厉害的Rocket学长！",
     },
+    {
+    name: "Modo's Dreamland",
+    link: "https://www.modo.org.cn",
+    avatar: "https://www.modo.org.cn/_astro/demo-avatar.CesVXW_w_Zp5YGb.webp",
+    descr: "Audentes fortuna iuvat!",
+    },
   ];
 
   function handleError(e: Event) {
