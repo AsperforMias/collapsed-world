@@ -15,9 +15,9 @@ const yaml = `
 <MainGridLayout title="链接" description="友情链接">
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full">
-            <Markdown class="mt-2">
+            <Markdown class="mt-2 link-page-intro">
                 <h1>友情链接</h1>
-                <p>对我有很大影响的朋友们</p>
+                <h2>一些对曾经的我影响很大的前辈们</h2>
                 <p>(一些是单向链接.虽然关系可能早已疏远,但我依然很怀念他们,怀念一些过去的时光)</p>
             </Markdown>
             <div class="my-6">
@@ -29,3 +29,14 @@ const yaml = `
         </div>
     </div>
 </MainGridLayout>
+
+<style>
+    :global(.link-page-intro h1) {
+        margin-bottom: 1.75rem;
+    }
+
+    :global(.link-page-intro h2) {
+        margin-top: 0;
+        margin-bottom: 1.25rem;
+    }
+</style>

@@ -1,10 +1,12 @@
 <script lang="ts">
-  const links: {
+  type Link = {
     name: string;
     link: string;
     avatar: string;
     descr: string;
-  }[] = [
+  };
+
+  const mentorLinks: Link[] = [
     {
       name: "Asuka Minato",
       link: "https://asukaminato.notion.site/",
@@ -60,6 +62,15 @@
       descr: "话糙理不糙的春希",
     },
     {
+      name: "Rocket",
+      link: "https://rocketma.dev/",
+      avatar: "https://avatars.githubusercontent.com/u/48864431?v=4",
+      descr: "网安很厉害的Rocket学长！",
+    },
+  ];
+
+  const friendLinks: Link[] = [
+    {
       name: "PurplePlanen",
       link: "https://Purpleplanen.top",
       avatar: "https://avatars.githubusercontent.com/u/151366823?v=4",
@@ -69,20 +80,25 @@
       name: "Moliyue",
       link: "https://moliyue.github.io/",
       avatar: "https://avatars.githubusercontent.com/u/45062702?v=4",
-      descr: "网工很厉害的moliyue",
+      descr: "网络很厉害的moliyue",
     },
     {
-      name: "Rocket",
-      link: "https://rocketma.dev/",
-      avatar: "https://avatars.githubusercontent.com/u/48864431?v=4",
-      descr: "网安很厉害的Rocket学长！",
+      name: "Modo's Dreamland",
+      link: "https://www.modo.org.cn",
+      avatar: "https://avatars.githubusercontent.com/u/227043249?v=4",
+      descr: "Audentes fortuna iuvat!",
     },
     {
-    name: "Modo's Dreamland",
-    link: "https://www.modo.org.cn",
-    avatar: "https://www.modo.org.cn/_astro/demo-avatar.CesVXW_w_Zp5YGb.webp",
-    descr: "Audentes fortuna iuvat!",
-    },
+    name: "ZeroQing‘s Blog",
+    link: "https://www.zeroqing.com",
+    avatar: "https://s1.imagehub.cc/images/2026/07/02/4d849eaa97d119f4e79244a65253c72f.png",
+    descr: "一目洞察网中险，一策化解千般难。",
+    }
+  ];
+
+  const linkGroups = [
+    { title: null, links: mentorLinks },
+    { title: "友链", links: friendLinks },
   ];
 
   function handleError(e: Event) {
@@ -90,35 +106,47 @@
   }
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
-  {#each links as item}
-    <a
-      id="link-card"
-      href={item.link}
-      class="flehover)] active:bg-[var(--btn-plain-bg-active)] p-4 hover:pl-6 transition-all"
-    >
-      <img
-        src={item.avatar}
-        alt={item.name}
-        class="rounded-full flex-0"
-        width={64}
-        height={64}
-        on:error={handleError}
-      />
+{#each linkGroups as group}
+  {#if group.title}
+    <hr class="mt-10 mb-8 border-[var(--line-divider)]" />
+    <h2 class="mt-8 mb-4 text-2xl font-bold text-neutral-900 dark:text-neutral-100 transition">
+      {group.title}
+    </h2>
+  {/if}
 
-      <div
-        class="flex flex-col w-full overflow-hidden text-ellipsis whitespace-nowrap flex-1"
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+    {#each group.links as item}
+      <a
+        id="link-card"
+        href={item.link}
+        class="flehover)] active:bg-[var(--btn-plain-bg-active)] p-4 hover:pl-6 transition-all"
       >
-        <div class="text-bold text-xl text-bold text-[var(--primary)]">
-          {item.name}
+        <img
+          src={item.avatar}
+          alt={item.name}
+          class="rounded-full flex-0"
+          width={64}
+          height={64}
+          on:error={handleError}
+        />
+
+        <div
+          class="flex flex-col w-full overflow-hidden text-ellipsis whitespace-nowrap flex-1"
+        >
+          <div class="text-bold text-xl text-bold text-[var(--primary)]">
+            {item.name}
+          </div>
+          <div
+            class="text-md dark:text-neutral-50 transition"
+            title={item.descr}
+          >
+            {item.descr}
+          </div>
         </div>
-        <div class="text-md dark:text-neutral-50 transition" title={item.descr}>
-          {item.descr}
-        </div>
-      </div>
-    </a>
-  {/each}
-</div>
+      </a>
+    {/each}
+  </div>
+{/each}
 
 <style>
   #link-card:hover {
