@@ -35,7 +35,7 @@
       name: "夏沫花火zzz",
       link: "https://blog.1l1.icu/",
       avatar: "https://avatars.githubusercontent.com/u/79651409?v=4",
-      descr: "花火老师,一位前端和运维上的天才",
+      descr: "花火老师,前端和运维上的天才",
     },
     {
       name: "yurzhang",
@@ -71,10 +71,10 @@
 
   const friendLinks: Link[] = [
     {
-      name: "PurplePlanen",
-      link: "https://Purpleplanen.top",
-      avatar: "https://avatars.githubusercontent.com/u/151366823?v=4",
-      descr: "帕秋莉,前端的学长w",
+      name: "Vanillaxi",
+      link: "https://vanillaxi.top/",
+      avatar: "https://avatars.githubusercontent.com/u/237921636?v=4",
+      descr: "A quiet place for writings, notes, and memories.",
     },
     {
       name: "Moliyue",
